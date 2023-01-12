@@ -1,0 +1,20 @@
+.nav-container {
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  gap: 2vw;
+}
+
+.nav-item {
+  text-align: center;
+}

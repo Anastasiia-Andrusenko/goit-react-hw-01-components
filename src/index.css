@@ -13,3 +13,55 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ============ M Y       S T Y L E  =========*/
+
+.nav-container {
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  margin-top: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(46, 48, 61);
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 50vw;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  gap: 2vw;
+}
+
+.nav-item {
+  text-align: center;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  transition: all linear 200ms;
+}
+
+.nav-item:hover {
+  background-color: rgb(46, 47, 69);
+  color: white;
+  box-shadow: 8px 8px 24px -10px rgba(66, 68, 90, 1);
+}
