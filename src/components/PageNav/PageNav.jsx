@@ -1,10 +1,10 @@
-// import css from '../PageNav/PageNav.module.css';
-import PropTypes from 'prop-types';
 
 
-export const PageNav = ({title}) => {
+
+
+export const PageNav = () => {
   return <div className="{css.nav-container}">
-    <h1 className="title">{title}</h1>
+    <h1 className="page-title">Home Work React 1 by Anastasiia Andrusenko</h1>
     <ul className="nav-list">
       <li className="nav-item">
         <a href='#task-1'>Task #1</a>
@@ -20,10 +20,4 @@ export const PageNav = ({title}) => {
       </li>
     </ul>
   </div>
-}
-
-// title = Home Work React 1 by Anastasiia Andrusenko
-
-PageNav.propTypes = {
-  title: PropTypes.string.isRequired,
 }

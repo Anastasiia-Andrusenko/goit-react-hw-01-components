@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 
 export const Statistics = ({title, stats}) => {
   return <section className="statistics" id="task-2">
@@ -8,7 +9,12 @@ export const Statistics = ({title, stats}) => {
           <span className="label">{data.label}</span>
           <span className="percentage">{data.percentage}%</span>
         </li>
-   )}
+      )}
     </ul>
   </section>
+}
+
+Statistics.propTypes = {
+  title: PropTypes.string.isRequired,
+  stats: PropTypes.array.isRequired,
 }

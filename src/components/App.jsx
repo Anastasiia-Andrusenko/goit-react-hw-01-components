@@ -32,7 +32,7 @@ import transactionsData from "../transactions.json";
 export const App = () => {
   return (
     <div>
-      <PageNav title="Home Work React 1 by Anastasiia Andrusenko" />
+      <PageNav/>
       <Profile
         username={userData.username}
         tag={userData.tag}
@@ -42,7 +42,7 @@ export const App = () => {
       />
       <Statistics title="Upload stats" stats={statsData} />
       <FriendList friends={friendsData} />
-      <TransactionHistory transactions={transactionsData} />;
+      <TransactionHistory transactions={transactionsData} />
     </div>
-  );
+  )
 };
