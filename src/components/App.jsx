@@ -21,7 +21,13 @@ import { Profile } from "./task1/Profile";
 import userData from "../user.json";
 
 import { Statistics } from "./task2/Statistics";
-import data from "../data.json"
+import statsData from "../data.json"
+
+import { FriendList } from "./task3/FriendList";
+import friendsData from "../friends.json";
+
+import { TransactionHistory } from "./task4/TransactionHistory";
+import transactionsData from "../transactions.json";
 
 export const App = () => {
   return (
@@ -34,7 +40,9 @@ export const App = () => {
         avatar={userData.avatar}
         stats={userData.stats}
       />
-      <Statistics title="Upload stats" stats={data}/>
+      <Statistics title="Upload stats" stats={statsData} />
+      <FriendList friends={friendsData} />
+      <TransactionHistory transactions={transactionsData} />;
     </div>
   );
 };

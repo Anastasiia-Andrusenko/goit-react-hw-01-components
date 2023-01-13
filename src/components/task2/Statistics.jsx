@@ -1,28 +1,14 @@
 
 export const Statistics = ({title, stats}) => {
-  return <section className="statistics">
+  return <section className="statistics" id="task-2">
     <h2 className="title">{title}</h2>
-  <ul className="stat-list">
-    <li className="item">
-      <span className="label">.docx</span>
-      <span className="percentage"{}%</span>
-    </li>
-    <li className="item">
-      <span className="label">.mp3</span>
-      <span className="percentage">{}%</span>
-    </li>
-    <li className="item">
-      <span className="label">.pdf</span>
-      <span className="percentage">{}%</span>
-    </li>
-    <li className="item">
-      <span className="label">.mp4</span>
-      <span className="percentage">{}%</span>
-      </li>
-      <li className="item">
-      <span className="label">.mp4</span>
-      <span className="percentage">{}%</span>
-    </li>
-  </ul>
-</section>
+    <ul className="stat-list">
+      {stats.map(data => 
+        <li className="item" key={data.id}>
+          <span className="label">{data.label}</span>
+          <span className="percentage">{data.percentage}%</span>
+        </li>
+   )}
+    </ul>
+  </section>
 }
