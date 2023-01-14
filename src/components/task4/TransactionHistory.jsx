@@ -1,22 +1,23 @@
 import PropTypes from 'prop-types';
+import css from '../task4/TransactionHistory.module.css';
 
 export const TransactionHistory = ({transactions}) => {
   return <>
-    <h2 id="task-4">Transaction History</h2>
-    <table className="transaction-history">
-      <thead>
+    <h2 id="task-4" className={css.title}>Transaction History</h2>
+    <table className={css.transaction_history}>
+      <thead className={css.table_head}>
         <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+          <th className={css.data}>Type</th>
+          <th className={css.data}>Amount</th>
+          <th className={css.data}>Currency</th>
         </tr>
       </thead>
       <tbody>
         {transactions.map(({id, type, amount, currency}) => 
-          <tr className="" key={id}>
-            <td>{type}</td>
-            <td>{amount}</td>
-            <td>{currency}</td>
+          <tr className={css.table_raw} key={id}>
+            <td className={css.type}>{type}</td>
+            <td className={css.amount}>{amount}</td>
+            <td className={css.currency}>{currency}</td>
           </tr>
         )}
       </tbody>
@@ -26,7 +27,7 @@ export const TransactionHistory = ({transactions}) => {
 
 TransactionHistory.propTypes = {
   transactions: PropTypes.arrayOf(
-    PropTypes.exact({
+    PropTypes.shape({
       id: PropTypes.string.isRequired,
       type: PropTypes.string.isRequired,
       amount: PropTypes.string.isRequired,
