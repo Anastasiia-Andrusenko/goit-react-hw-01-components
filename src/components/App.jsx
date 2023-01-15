@@ -2,16 +2,16 @@
 import { PageNav } from "./PageNav/PageNav";
 
 import { Profile } from "./task1/Profile";
-import userData from "../user.json";
+import userData from "../data/user.json";
 
 import { Statistics } from "./task2/Statistics";
-import statsData from "../data.json"
+import statsData from "../data/data.json"
 
 import { FriendList } from "./task3/FriendList";
-import friendsData from "../friends.json";
+import friendsData from "../data/friends.json";
 
 import { TransactionHistory } from "./task4/TransactionHistory";
-import transactionsData from "../transactions.json";
+import transactionsData from "../data/transactions.json";
 
 export const App = () => {
   return (
