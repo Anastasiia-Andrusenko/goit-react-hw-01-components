@@ -34,3 +34,10 @@ html {
 * {
   box-sizing: border-box;
 }
+
+#task-1,
+#task-2,
+#task-3,
+#task-4 {
+  scroll-margin-top: 250px;
+}

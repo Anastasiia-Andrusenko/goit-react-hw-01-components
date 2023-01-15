@@ -1,14 +1,15 @@
 .profile {
   margin-top: 50vh;
-  scroll-margin-top: 250px;
-  width: 260px;
   margin-left: auto;
   margin-right: auto;
   padding: 20px 0 0 0;
+  width: 260px;
+
   border: 1px solid rgba(93, 83, 123, 0.428);
   border-radius: 10px;
   box-shadow: inset 0px 0px 23px -11px rgb(101, 70, 100);
-  overflow: hidden;
+  /* overflow: hidden; */
+  overflow: clip;
 }
 
 .avatar {

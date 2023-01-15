@@ -3,8 +3,8 @@ import css from '../task4/TransactionHistory.module.css';
 
 export const TransactionHistory = ({transactions}) => {
   return <>
-    <h2 id="task-4" className={css.title}>Transaction History</h2>
-    <table className={css.transaction_history}>
+    <h2 className={css.title}>Transaction History</h2>
+    <table className={css.transaction_history} id="task-4">
       <thead className={css.table_head}>
         <tr>
           <th className={css.data}>Type</th>
