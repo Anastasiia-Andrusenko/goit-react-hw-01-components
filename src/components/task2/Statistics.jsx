@@ -5,8 +5,8 @@ import css from '../task2/Statistics.module.css'
 import getRandomColor from './getRandomColor';
 
 export const Statistics = ({ title, stats }) => {
-  return <section className={css.statistics} id="task-2">
-    <h2 className={css.title}>{title}</h2>
+  return title && <section className={css.statistics} id="task-2">
+   <h2 className={css.title}>{title}</h2>
     <ul className={css.list}>
       {stats.map(({ id, label, percentage }) =>
         <li className={css.item} key={id} style={{backgroundColor: getRandomColor() }}>
@@ -24,10 +24,11 @@ export const Statistics = ({ title, stats }) => {
 // };
 
 Statistics.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
       percentage: PropTypes.number.isRequired,
     }),
   ),
